@@ -35,7 +35,7 @@ public class ClickandTap : MonoBehaviour
 
             //Convert the mousePosition according to World position
             targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, distance));
-            Debug.Log(targetPosition);
+            //Debug.Log(targetPosition);
             //Set the position of targetObject
             targetObject.transform.position = targetPosition;
 
@@ -48,8 +48,9 @@ public class ClickandTap : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isMoving = true;
+            Debug.Log(isMoving);
             startTime = Time.time;
-            
+
         }
 
         if (isMoving)
