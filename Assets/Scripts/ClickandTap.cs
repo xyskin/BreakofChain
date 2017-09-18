@@ -16,7 +16,7 @@ public class ClickandTap : MonoBehaviour
     void Start()
     {
         isMoving = false;
-        Target = (GameObject)Resources.Load("Tag");
+        //Target = (GameObject)Resources.Load("Tag");
         speed = 10.0f;
     }
 
